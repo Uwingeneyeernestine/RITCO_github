@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>get your ticket on line</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+        <div class="box">
+            <header>
+        <div class="logo">
+        <img src="logo.svg" alt="Ritco logo">
+    </div>
+        <div>
+        RITCO ticket system management
+        </div>
+        </header>
+        <nav>
+         <div class="link">
+         <ul>
+            <li>
+       <a href="index.html">Home</a>
+    </li>
+    <li>
+        <a href="Routes.html">Routes</a>
+    </li>
+    <li>
+        <a href="service.html">Our Services</a>
+    </li>
+    <li>
+        <a href="register.html">Register</a>
+    </li>
+    <li>
+        <a href="login.html">login</a>
+    </li>
+</ul>
+    </div>
+</div>
+    <!--image slider-->
+    <div>
+   <div class="slider">
+<img class="active" src="hero_thumb_2.png" alt="image1">
+<img src="images.jpg" alt="image2">
+<img src="about_3.png" alt="image3">
+   </div>
+   <div>
+    
+   </div>
+</div>
+   <div class="btn"> 
+    <button><a href="Routes.html">next</a></button>
+</div>
+</nav>
+<footer>
+    RITCO TICKET MANAGEMENT  SYSTEM
+</footer>
+<script>
+const slider = document.querySelector('.slider');
+    const slides = slider.querySelectorAll('img');
+    let currentIndex = 0;
+    const intervalTime = 3000; // Time in milliseconds between slides
+
+    function nextSlide() {
+        slides[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active');
+    }
+
+    setInterval(nextSlide, intervalTime);
+     
+</script>
+    </body>
+</html>
