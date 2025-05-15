@@ -9,7 +9,7 @@
         <div class="container">
         <h3>Register form</h3>
         <div>
-     <form>
+     <form action="./connect.php"  method="post">
         <label>Name:</label>
         <input type="text" id="names" name="names">
     </div>
